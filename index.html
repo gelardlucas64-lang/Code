@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MY WEBSITE</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+.slider{
+    height:60vh;
+    background:url("image1.jpg") center/cover;
+    animation:slider 15s infinite;
+}
+
+@keyframes slider{
+    0%{background:url("file:///C:/Users/Toshiba/Pictures/Saved%20Pictures/InShot_20260619_190641446.jpg") center/cover;}
+    33%{background:url("file:///C:/Users/Toshiba/Pictures/Saved%20Pictures/Annotation%202026-06-11%20072742.png") center/cover;}
+    66%{background:url("file:///C:/Users/Toshiba/Desktop/New%20Folder/IMG20260427103724.jpg") center/cover;}
+    100%{background:url("file:///C:/Users/Toshiba/Pictures/Screenshots/Screenshot%20(2).png") center/cover;}
+}
+
+.section-title{
+    text-align:center;
+    margin:40px 0 20px;
+}
+
+.music-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    color:black;
+    width:300px;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+form{
+    width:90%;
+    max-width:500px;
+    margin:40px auto;
+    background:white;
+    color:black;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+form h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+    background:rgba(0,0,0,.3);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>WELCOME TO MY WEBSITE</h1>
+    <p>Music • Entertainment • Registration</p>
+</header>
+
+<div class="slider"></div>
+
+<h2 class="section-title">🎵 Music Collection</h2>
+
+<div class="music-container">
+
+    <div class="card">
+        <h3>centano_-_mishe mishe</h3>
+        <audio controls>
+            <source src="c:\Users\Toshiba\Music\music\Centano - Mishe Mishe (1).mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="card">
+        <h3>Alfa_kat_-_shetani</h3>
+        <audio controls>
+            <source src="c:\Users\Toshiba\Music\music\Mbosso_Ft_Costa_Titch_&_Alfa_Kat_-_Shetani_(Official_Music_Video)(360p) (1).mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="card">
+        <h3>Ibraah_-_Asante</h3>
+        <audio controls>
+            <source src="c:\Users\Toshiba\Music\song\Ibraah_-_Asante__Official_Visualizer_(256k).mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    
+</div>
+
+     <center><h2>User Registration</h2></center>
+       
+                <form action ="index.php"method="post">
+        <label for="username">Username:</label><br>
+        <input type="text"Id="username"placeholder="Enter user name"minlength="6"><br><br>
+        <label for="password">password:</label><br>
+        <input type="password"size="30"lmaxlenth="20"placeholder="Enter your password"><br>
+
+        <label for="email">email:</label><br>
+        <input type="email"id="email"placeholder="ssquarepants@gmail.com">
+        <br><br>
+
+        <lebel for="phone">phone:</lebel><br>
+        <input type="tel"id="phone"placeholder="123-456-789"patten="[0-9]"><br>
+
+        <label for="day">birthdate:</label><br>
+        <input type="date"id="bday"><br><br>
+
+           <label for="Title">Title"</label>
+        <input type="number"id=quantity=min="0"max="99"value="1"><br>
+     
+     
+        <label for="title">title:</label>
+        <label for="Mr">Mr</label><br>
+        <input type="radio"id="Mr" value="Mr" name="title">
+        
+          <label for="Ms">Ms.</label>
+           <input type="radio"id="Ms" value="Ms" name="title">
+          <label for="PhD">PhD.</label>
+        <input type="radio"id="PhD" value="PhD" name="title"><br>
+          <input type="reset"value="        reset">
+        <input type="submit" value="submit"
+       
+
+</form>
+
+<footer>
+    <p>© 2026 My Website | Designed by:02.7291.21.03.2025 </p>
+</footer>
+
+</body>
+</html>
